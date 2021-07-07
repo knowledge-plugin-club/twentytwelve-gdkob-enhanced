@@ -1,0 +1,80 @@
+/*
+Theme Name: TwentyTwelve KB, Enhanced
+Theme URI: https://plugins.dev4press.com/gd-knowledge-base/
+Author: Dev4Press / Milan Petrovic
+Author URI: http://www.dev4press.com/
+Description: Basic child theme for GD Knowledge Base Pro integration.
+Version: 3.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Template: twentytwelve
+*/
+
+@import url("../twentytwelve/style.css");
+
+.gdcub-breadcrumbs-wrapper {
+    border-bottom: 1px solid #ededed;
+    margin-bottom: 2em;
+}
+
+.gdkob-home-block {
+    line-height: 1.5;
+    margin: 0 0 3em;
+}
+
+.gdkob-home-block h1 {
+    text-align: center;
+    font-size: 3em;
+}
+
+.gdkob-home-block .block-subtitle {
+    text-align: center;
+    font-size: 1.5em;
+    margin: 0 0 1em;
+}
+
+.gdkob-home-block form {
+    margin: 0 auto;
+    max-width: 720px;
+}
+
+.gdkob-home-block-quick {
+    text-align: center;
+    background-color: #f8f8f8;
+    padding: 2em;
+}
+
+.gdkob-home-block-quick i.gdkob-icon {
+    font-size: 6em;
+}
+
+.gdkob-home-block-quick h3 {
+    font-size: 1.3em;
+    margin: .25em 0 .5em;
+}
+
+.gdkob-home-block-quick p {
+    font-size: 1em;
+    margin: 0 0 1em;
+}
+
+.gdkob-home-block-quick a {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#comments {
+    margin: 3em 0 0;
+    border-top: 4px double #ededed;
+    padding: 2em 0;
+}
+
+#comments .comments-title {
+    font-weight: bold;
+    font-size: 1.3em;
+    margin: 0 0 2em;
+}
+
+.archive-title {
+    font-size: 1.3em;
+}
