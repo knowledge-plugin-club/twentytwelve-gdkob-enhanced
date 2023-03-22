@@ -1,4 +1,10 @@
-<?php get_header(); ?>
+<?php
+
+use Dev4Press\Plugin\GDKOB\Front\Display;
+
+get_header();
+
+?>
 
 <section id="primary" class="site-content">
     <div id="content" role="main">
@@ -23,7 +29,7 @@
                 gdkob_load_template('gdkob-product-archive.php');
             endwhile;
 
-            gdkob_the_posts_pagination();
+	        Display::instance()->posts_pagination();
 
         else :
 

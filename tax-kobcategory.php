@@ -1,4 +1,10 @@
-<?php get_header(); ?>
+<?php
+
+use Dev4Press\Plugin\GDKOB\Front\Display;
+
+get_header();
+
+?>
 
 <section id="primary" class="site-content">
     <div id="content" role="main">
@@ -26,14 +32,12 @@
                     gdkob_load_template('gdkob-article-archive.php');
                 } else if ($post_type == gdkob()->posttype_faq()) {
                     gdkob_load_template('gdkob-faq-archive.php');
-                } else if ($post_type == gdkob()->posttype_reference()) {
-                    gdkob_load_template('gdkob-reference-archive.php');
                 } else if ($post_type == gdkob()->posttype_user_guide()) {
                     gdkob_load_template('gdkob-user_guide-archive.php');
                 }
             endwhile;
 
-            gdkob_the_posts_pagination();
+	        Display::instance()->posts_pagination();
 
         else :
 

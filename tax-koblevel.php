@@ -21,13 +21,21 @@ get_header();
 
             gdkob_load_template('gdkob-current-term.php');
 
-            gdkob_load_template('gdkob-list-topics.php');
+            gdkob_load_template('gdkob-list-levels.php');
 
-            while (have_posts()) : 
-                the_post();
+	        while (have_posts()) :
+		        the_post();
 
-                gdkob_load_template('gdkob-reference-archive.php');
-            endwhile;
+		        $post_type = get_post_type();
+
+		        if ($post_type == gdkob()->posttype_article()) {
+			        gdkob_load_template('gdkob-article-archive.php');
+		        } else if ($post_type == gdkob()->posttype_faq()) {
+			        gdkob_load_template('gdkob-faq-archive.php');
+		        } else if ($post_type == gdkob()->posttype_user_guide()) {
+			        gdkob_load_template('gdkob-user_guide-archive.php');
+		        }
+	        endwhile;
 
 	        Display::instance()->posts_pagination();
 

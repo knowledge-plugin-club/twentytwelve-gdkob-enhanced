@@ -9,17 +9,9 @@
             the_post();
 
             if (gdkob_query()->sub_type != '') {
-                echo '<div class="gdkob-entry-wrapper gdkob-resource-archive">';
-
                 gdkob_load_template('gdkob-product-resources.php');
-
-                echo '</div>';
             } else {
-                echo '<div class="gdkob-entry-wrapper">';
-
                 gdkob_load_template('gdkob-product-single.php');
-
-                echo '</div>';
 
                 if (comments_open() || get_comments_number()) :
                     comments_template('', true);
